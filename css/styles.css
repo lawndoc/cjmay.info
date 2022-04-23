@@ -43,6 +43,43 @@ main {
 	text-align: center;
 }
 
+works {
+	display: flex;
+	flex-direction: row;
+	min-height: 100vh;
+	justify-content: center;
+	padding: 0 5em;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+a {
+	color: white;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	align-items: center;
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.heading {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 2.75em;
+	font-weight: 600;
+}
+
 main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
