@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/blog_cards.css">
 	<!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
 	<link rel="stylesheet" href="css/themes/red-white.css">
@@ -24,86 +25,282 @@
 </head>
 <body>
 	<works>
-		<div class="column">
-			<div class="heading">Whitepapers</div>
-			<ul>
-				<li>
-					<a href="https://scholarworks.uni.edu/cgi/viewcontent.cgi?article=1423&context=hpt">Jaws Programming Language</a>
-				</li>
-			</ul>
+		<div class="row">
+			<div class="col1 heading">Whitepapers</div>
+			<div class="col3">
+				<div class="blog-card">
+					<img class="blog-img" src="/static/media/jawsWhitepaper.png" />
+					<a href="https://scholarworks.uni.edu/cgi/viewcontent.cgi?article=1423&context=hpt">
+						<div class="text-overlay">
+							<h2>Jaws Programming Language</h2>
+							<p>Jaws is an invisible interpreted programming language that was created for antivirus research. Since Jaws code is
+							composed entirely of whitespace characters, it can easily coexist with other programming languages to create polyglot
+							code.</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
-		<div class="column">
-			<div class="heading">Blogs</div>
-			<ul>
-				<li>
-					<a href="https://blog.gitguardian.com/ciso-roadmap-first-90-days/">CISO Roadmap: First 90 Days</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/ci-pipelines-5-risks-to-assess/">CI Pipelines: 5 Risks to Assess</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/securing-containers-with-seccomp-part-1/">Securing Containers with Seccomp: Part 1</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/securing-containers-with-seccomp-part-2/">Securing Containers with Seccomp: Part 2</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/github-actions-security-cheat-sheet/">GitHub Actions Security Best Practices</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/abusing-stolen-private-keys/">Thinking Like a Hacker: Abusing Stolen Private Keys</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/thinking-like-a-hacker-aws-keys-in-private-repos/">TLAH: AWS Keys in Private Repos</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/thinking-like-a-hacker-commanding-a-bot-army-of-leaked-twitter-accounts/">TLAH: Hijacked Twitter Accounts</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/thinking-like-a-hacker-stealing-secrets-with-a-malicious-github-action/">TLAH: Malicious GitHub Actions</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/thinking-like-a-hacker-finding-leaked-code-on-github/">TLAH: Source Code Leaks</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/infrastructure-as-code-security-best-practices-cheat-sheet-included/">Securing Infrastructure-as-Code (IaC)</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/secure-code-review-cheat-sheet-included/">Secure Code Review</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/api-key-rotation-best-practices/">How to Become Great at Key Rotation</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/how-to-handle-mobile-app-secrets/">How to Handle Mobile App Secrets</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/vulnerability-management-lifecycle-in-devsecops/">Vulnerability Management Lifecycle in DevSecOps</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/secure-by-design-software-in-devsecops/">Secure-by-Design Software in DevSecOps</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/pipeline-integrity-and-security-in-devsecops/">Pipeline Integrity and Security in DevSecOps</a>
-				</li>
-				<li>
-					<a href="https://blog.gitguardian.com/open-source-vulnerability-databases-comparison/">Open Source Vulnerability Databases Comparison</a>
-				</li>
-			</ul>
+
+		<div class="row">
+			<div class="col1 heading">Talks</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/github_actions_talk.png" />
+				<a href="https://youtu.be/f_gBWAPwjug">
+					<div class="text-overlay">
+						<h2>Securing GitHub Actions Workflows</h2>
+						<p>CI/CD pipelines are critical for delivering code from developers’ machines to production servers. It’s no surprise that
+						the environments, processes, and tools that make up this area – where every single misconfiguration is part of a larger
+						attack surface – are becoming more appealing to hackers.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/jaws_talk.png" />
+				<a href="https://youtu.be/3G539_DFLgk?si=LxlGjsboEADasULg">
+					<div class="text-overlay">
+						<h2>Jaws Programming Language</h2>
+						<p>Jaws is an invisible interpreted programming language that was created for antivirus research. Since Jaws code is
+						composed entirely of whitespace characters, it can easily coexist with other programming languages to create polyglot
+						code.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/seccomp_talk.png" />
+				<a href="https://www.youtube.com/watch?v=TjkIoRTax4o">
+					<div class="text-overlay">
+						<h2>Seccomp CI Automation</h2>
+						<p>Seccomp is a Linux kernel security feature that allows you to constrain the syscalls that a process can make. By using
+						automated tools, you can easily generate seccomp profiles for your container images in a CI/CD pipeline.</p>
+					</div>
+				</a>
+			</div>
 		</div>
-		<div class="column">
-			<div class="heading">Talks</div>
-			<ul>
-				<li>
-					<a target="_blank" href="https://www.youtube.com/watch?v=TjkIoRTax4o">Seccomp CI Automation</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://youtu.be/3G539_DFLgk?si=LxlGjsboEADasULg">Jaws Programming Language</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://youtu.be/f_gBWAPwjug">Securing GitHub Actions Workflows</a>
-				</li>
-			</ul>
+
+		<div class="row">
+			<div class="col1 heading">Blogs</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/vuln_db_comparison.png" />
+				<a href="https://blog.gitguardian.com/open-source-vulnerability-databases-comparison/">
+					<div class="text-overlay">
+						<h2>Open Source Vulnerability Databases Comparison</h2>
+						<p>Essential reading for developers and security professionals alike: a comprehensive comparison of vulnerability databases
+						to help you cut through the noise.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/pipeline_integrity.png" />
+				<a href="https://blog.gitguardian.com/pipeline-integrity-and-security-in-devsecops/">
+					<div class="text-overlay">
+						<h2>Pipeline Integrity and Security in DevSecOps</h2>
+						<p>Last episode of the series on implementing a DevSecOps program: how to harden your software delivery pipelines to
+						maintain robust security measures.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/secure_sdlc.png" />
+				<a href="https://blog.gitguardian.com/secure-by-design-software-in-devsecops/">
+					<div class="text-overlay">
+						<h2>Secure-by-Design Software in DevSecOps</h2>
+						<p>This new series is about implementing secure-by-design software processes that empower engineering teams. The second
+						part of this DevSecOps program is all about implementing secure-by-design software pipelines.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/vuln_mgmt_lifecycle.png" />
+				<a href="https://blog.gitguardian.com/vulnerability-management-lifecycle-in-devsecops/">
+					<div class="text-overlay">
+						<h2>Vulnerability Management Lifecycle in DevSecOps</h2>
+						<p>This new series is about implementing secure-by-design software processes that empower engineering teams. The first
+						stage of this DevSecOps program: vulnerability management.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/mobile_app_secrets.png" />
+				<a href="https://blog.gitguardian.com/how-to-handle-mobile-app-secrets/">
+					<div class="text-overlay">
+						<h2>How to Handle Mobile App Secrets</h2>
+						<p>Learn why storing secrets in mobile apps is a major security risk, how to manage user and developer secrets properly,
+						and why client-side secrecy is impossible. Find out the best practices for securing mobile app secrets and protecting
+						your data.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/api_key_rotation.png" />
+				<a href="https://blog.gitguardian.com/api-key-rotation-best-practices/">
+					<div class="text-overlay">
+						<h2>How to Become Great at Key Rotation</h2>
+						<p>Secret management can be a complex challenge, especially when you are trying to do it in a way that is right for
+						security. Key rotation is a big piece of that puzzle. In this article, we will take you from zero to hero on key
+						rotation.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/secure_code_review.jpg" />
+				<a href="https://blog.gitguardian.com/secure-code-review-cheat-sheet-included/">
+					<div class="text-overlay">
+						<h2>Secure Code Review</h2>
+						<p>Reducing vulnerabilities in your software means manual and automated secure code reviews. Download ourhandy cheat sheet
+						to keep your review practice on track.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/securing_iac.png" />
+				<a href="https://blog.gitguardian.com/infrastructure-as-code-security-best-practices-cheat-sheet-included/">
+					<div class="text-overlay">
+						<h2>Securing Infrastructure-as-Code (IaC)</h2>
+						<p>Discover the best practices and tools to scan and secure your infrastructure as code (IaC) throughout the DevOps
+						software development lifecycle. From threat modeling to monitoring, this comprehensive guide offers valuable insights to
+						improve the security, reliability, and consistency of your IaC.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/tlah.png" />
+				<a href="https://blog.gitguardian.com/thinking-like-a-hacker-finding-leaked-code-on-github/">
+					<div class="text-overlay">
+						<h2>TLAH: Source Code Leaks</h2>
+						<p>Continuing our series about potential attack scenarios, learn how a very easy configuration mistake on GitHub can lead
+						to a major security breach.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/tlah.png" />
+				<a href="https://blog.gitguardian.com/thinking-like-a-hacker-stealing-secrets-with-a-malicious-github-action/">
+					<div class="text-overlay">
+						<h2>TLAH: Malicious GitHub Actions</h2>
+						<p>How can an attacker exploit leaked credentials? In this new series, we try to answer this question by imagining
+						plausible attack scenarios. Fourth case: secrets are stolen with a malicious GitHub action.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/tlah.png" />
+				<a href="https://blog.gitguardian.com/thinking-like-a-hacker-commanding-a-bot-army-of-leaked-twitter-accounts/">
+					<div class="text-overlay">
+						<h2>TLAH: Hijacked Twitter Accounts</h2>
+						<p>How can an attacker exploit leaked credentials? In this new series, we try to answer this question by imagining
+						plausible attack scenarios. Third case: Twitter API keys are used to pump an altcoin.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/tlah.png" />
+				<a href="https://blog.gitguardian.com/thinking-like-a-hacker-aws-keys-in-private-repos/">
+					<div class="text-overlay">
+						<h2>TLAH: AWS Keys in Private Repos</h2>
+						<p>How can an attacker exploit leaked credentials? In this new series, we try to answer this question by imagining
+						plausible attack scenarios. Second case: an AWS secret is found in a private repository.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/tlah.png" />
+				<a href="https://blog.gitguardian.com/abusing-stolen-private-keys/">
+					<div class="text-overlay">
+						<h2>Thinking Like a Hacker: Abusing Stolen Private Keys</h2>
+						<p>How can an attacker exploit leaked credentials? In this new series, we try to answer this question by imagining
+						plausible attack scenarios. First case: an RSA private key is found in a Docker image.</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/gha_security.png" />
+				<a href="https://blog.gitguardian.com/github-actions-security-cheat-sheet/">
+					<div class="text-overlay">
+						<h2>GitHub Actions Security Best Practices</h2>
+						<p>Learn how to secure your GitHub Actions with these best practices! From controlling credentials to using specific action
+						version tags, this cheat sheet will help you protect against supply-chain attacks. Don't let a malicious actor inject
+						code into your repository - read now!</p>
+					</div>
+				</a>
+			</div>
+			<div class="blog-card col3">
+				<img class="blog-img" src="/static/media/seccomp_blog.png" />
+				<a href="https://blog.gitguardian.com/securing-containers-with-seccomp/">
+					<div class="text-overlay">
+						<h2>Securing Containers with Seccomp</h2>
+						<p>In this article we present a novel way to protect your container applications post-exploitation. This additional
+						protection is called Seccomp-BPF.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/ci_top_5.png" />
+				<a href="https://blog.gitguardian.com/ci-pipelines-5-risks-to-assess/">
+					<div class="text-overlay">
+						<h2>CI Pipelines: 5 Risks to Assess</h2>
+						<p>More and more parts of the software development process can occur without human intervention. However, this is not
+						without its drawbacks. To keep your code and secrets safe, you should add the following security practices to your CI
+						pipeline.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/ciso_roadmap.png" />
+				<a href="https://blog.gitguardian.com/ciso-roadmap-first-90-days/">
+					<div class="text-overlay">
+						<h2>CISO Roadmap: First 90 Days</h2>
+						<p>Come away with a game plan for strengthening your information security program.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/rshell.jpg" />
+				<a href="https://www.palehat.net/reverse-shell-anywhere/">
+					<div class="text-overlay">
+						<h2>Reverse Shell Anywhere</h2>
+						<p>Follow along as I explain how to do sinful things with Linux pipes and rant about the "magic" of Python and the
+						"helpful" ways they buffer your streams.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/seccomp_crates.png" />
+				<a href="https://www.palehat.net/black-box-seccomp-profiling/">
+					<div class="text-overlay">
+						<h2>Black Box Seccomp Profiling</h2>
+						<p>Blindly kneecap your Dockers for security -- trust me bro.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/browserception.png" />
+				<a href="https://www.palehat.net/project-browser-ception/">
+					<div class="text-overlay">
+						<h2>Browserception</h2>
+						<p>Have you ever dreamed of opening up your web browser, navigating to a website, and having a whole other functional
+						browser within that web page???</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/purple_gitlab.png" />
+				<a href="https://www.palehat.net/learning-experience-gitlab-and-reverse-proxies/">
+					<div class="text-overlay">
+						<h2>Gitlab and Reverse Proxies</h2>
+						<p>Me chronicling my troubleshooting of Gitlab not being reachable behind my reverse proxy.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col3 blog-card">
+				<img class="blog-img" src="/static/media/jawsLogo.png" />
+				<a href="https://www.palehat.net/jaws-research/">
+					<div class="text-overlay">
+						<h2>Jaws Programming Language</h2>
+						<p>The first public post about the Jaws programming language that I created in my undergrad research. Jaws is an
+						invisible interpreted programming language!</p>
+					</div>
+				</a>
 		</div>
 	</works>
 </body>
