@@ -72,6 +72,7 @@
   display: block;
   position: relative;
   width: 400px;
+  max-width: calc(100% - 2em);
   height: 250px;
   margin: 1%;
   margin-bottom: 1em;
